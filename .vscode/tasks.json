@@ -14,6 +14,48 @@
         "panel": "new"
       },
       "problemMatcher": []
+    },
+    {
+      "label": "build",
+      "command": "gulp",
+      "type": "shell",
+      "args": [
+        "build"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "clean",
+      "command": "gulp",
+      "type": "shell",
+      "args": [
+        "clean"
+      ],
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "rebuild",
+      "command": "gulp",
+      "type": "shell",
+      "args": [
+        "rebuild"
+      ],
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "problemMatcher": []
     }
   ]
 }

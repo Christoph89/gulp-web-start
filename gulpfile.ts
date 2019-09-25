@@ -3,6 +3,7 @@ import * as $ from "gulp-web-build";
 /** Installs all dependencies and prepares the project. */
 $.task("prep", function prep_fn (cb) {
   return new $.VSCode()
+    .excludeGitIgnores()
     // add all gulp task runners to vsc
     .addGulpTasks() 
     // add debuggers to vsc

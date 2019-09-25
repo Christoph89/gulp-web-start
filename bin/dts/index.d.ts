@@ -1,2 +1,4 @@
-/** Adds a test server task. */
-export declare function addServerTask(name: string, port: number, folder: string, debugFolder?: string): void;
+export declare module WebServer {
+    /** Adds a test server task. */
+    function listen(taskName: string, port: number, folder: string, debugFolder?: string): void;
+}
