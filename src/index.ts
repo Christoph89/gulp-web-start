@@ -4,7 +4,7 @@ import * as connect from "connect";
 import * as serveStatic from "serve-static";
 import * as yargs from "yargs";
 
-export module WebServer
+export module WebServerTask
 {
   /** Adds a test server task. */
   export function listen(taskName: string, port: number, folder: string, debugFolder?: string)
@@ -23,4 +23,4 @@ export module WebServer
   }
 }
 
-exports.module=WebServer;
+exports.module=WebServerTask;
