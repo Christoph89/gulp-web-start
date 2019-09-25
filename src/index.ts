@@ -12,7 +12,6 @@ export module WebServer
     $.task(taskName, function run(cb) 
     { 
       var args=yargs.argv;
-      var folder: string;
       if (debugFolder && args.debug)
         folder=debugFolder;
       var port=args.port || 8080;

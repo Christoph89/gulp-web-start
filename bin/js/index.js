@@ -11,7 +11,6 @@ var WebServer;
     function listen(taskName, port, folder, debugFolder) {
         $.task(taskName, function run(cb) {
             var args = yargs.argv;
-            var folder;
             if (debugFolder && args.debug)
                 folder = debugFolder;
             var port = args.port || 8080;
