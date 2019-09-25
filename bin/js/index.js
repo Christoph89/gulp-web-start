@@ -15,7 +15,7 @@ var WebServer;
             if (debugFolder && args.debug)
                 folder = debugFolder;
             var port = args.port || 8080;
-            var dir = path.resolve(__dirname + "/" + folder);
+            var dir = path.resolve(folder);
             connect().use(serveStatic(dir)).listen(port, function () {
                 console.log("Server running from " + dir + " on port " + port + ". Use http://localhost:" + port + " for testing...");
             });
